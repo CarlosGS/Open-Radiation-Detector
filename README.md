@@ -5,7 +5,11 @@ Portable radiation detector based on an open ionization chamber
 
 Progress
 --
-- Week of 7/Feb/2017: The new approach is to use an actual chamber that uses a copper electrode insulated from ground by an outer guard ring. The chamber itself is made of [a standard size, commercially available PCB shielding can](http://www.mouser.es/Search/ProductDetail.aspx?R=BMI-S-104virtualkey64820000virtualkey739-BMI-S-104). The first prototype actually seemed to have some reaction during the tests. However the second prototype did not. [G-code to mill the electrode](http://jscut.org/jscut.html?gist=c962737e35c9f9b0445b82d079ceb10d).
+- 8/Feb/2017: The Darlington transistors that I was using (MMBT6427, MMBTA14, MMBTA28, MMBTA63, MMBTA64) may not be suitable for the low currents involved in this detection problem (nA or even pA). Yet again I have resorted to Charles Wenzel's awesome website. I may have finally found a proper surface-mount alternative to the MPSAW45A power darlington transistor: the FMMT634 and FMMT734. So I've ordered a bunch of these transistors in order to test the designs again.
+
+<img src="pictures/FMMT734_gain.png" height="100px"/>
+
+- Week of 7/Feb/2017: The new approach is to use an actual chamber that uses a copper electrode insulated from ground by an outer guard ring. The chamber itself is made of [a standard size, commercially available PCB shielding can](http://www.mouser.es/Search/ProductDetail.aspx?R=BMI-S-104virtualkey64820000virtualkey739-BMI-S-104) (in the pictures you can see my attempt at creating one with tin sheet from a metal can). The first prototype actually seemed to have some reaction during the tests. However the second prototype did not. [G-code to mill the electrode](http://jscut.org/jscut.html?gist=c962737e35c9f9b0445b82d079ceb10d).
 
 <img src="pictures/it2_1stPrototype_6feb2017.jpg" height="150px"/>
 <img src="pictures/it2_2ndPrototype_7feb2017.jpg" height="150px"/>

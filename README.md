@@ -5,6 +5,12 @@ Portable radiation detector based on an open ionization chamber
 
 Progress
 --
+- 15/Feb/2017: It works! At first the result with the new transistors had lots of noise as well. But adding a copper plane behind the main electrode seems to have done the trick. So maybe the transistors were not the problem! The pictures show a new prototype being tested with and without a radiation source. Its response ranges from 70mV to 160mV and it is way more stable than before. Schematic is [Charles Wenzel's Experimenters Ionization Chamber](http://www.techlib.com/science/ion.html#Experimenters%20Chamber) with a FMMT634TA NPN darlington transistor.
+
+<img src="pictures/it2_3rdPrototype_15feb2017.jpg" height="150px"/>
+<img src="pictures/testing_3rdProt_background_15feb2017.jpg" height="150px"/>
+<img src="pictures/testing_3rdProt_withSource_15feb2017.jpg" height="150px"/>
+
 - 8/Feb/2017: The Darlington transistors that I was using (MMBT6427, MMBTA14, MMBTA28, MMBTA63, MMBTA64) may not be suitable for the low currents involved in this detection problem (nA or even pA). Yet again I have resorted to Charles Wenzel's awesome website. I may have finally found a proper surface-mount alternative to the MPSAW45A power darlington transistor: the FMMT634 and FMMT734. So I've ordered a bunch of these transistors in order to test the designs again.
 
 <img src="pictures/FMMT734_gain.png" height="100px"/>

@@ -5,7 +5,13 @@ Portable radiation detector based on an ionization chamber
 
 Progress
 --
-- Pending tasks: Connect the back plane to guard voltage instead of can voltage, and see if noise is still present. Polarize with lower resistance (instead of multimeter's internal). Test PNP configuration (should have larger gain). Design and mill self-contained PCB that uses 12V battery.
+- Pending tasks: Long term test (is there drift? how does temperature affect measure, even after compensating with another transistor?). Design and mill self-contained PCB that uses 12V battery. Think of electrode shapes to minimize effect of electrostatic fields.
+
+- 5/May/2017: The radiation sensor concept has been incorporated into a connected sensor board. It looks like the effect of nearby electrostatic fields still affects the voltage output, regardless of the back plane being connected to either guard voltage or ground (maybe this is due to the large size of the electrode?). The board uses the PNP configuration polarized with 10 MOhm 1% and an op-amp driver (LM2904DR) to minimize the effect of ADC current consumption. It includes a duplicate circuit unconnected from the electrode, to be used as a compensation for temperature effects.
+
+<img src="pictures/it3_uncovered_17apr2017.jpg" height="150px"/>
+<img src="pictures/it3_17apr2017.jpg" height="150px"/>
+<img src="pictures/voltage_output_5may2017.png" height="150px"/>
 
 - 15/Feb/2017: It works! At first the result with the new transistors had lots of noise as well. But adding a copper plane behind the main electrode seems to have done the trick. So maybe the transistors were not the problem! The pictures show a new prototype being tested with and without a radiation source. Its response ranges from 70mV to 160mV and it is way more stable than before. Schematic is [Charles Wenzel's Experimenters Ionization Chamber](http://www.techlib.com/science/ion.html#Experimenters%20Chamber) with an FMMT634TA NPN darlington transistor.
 

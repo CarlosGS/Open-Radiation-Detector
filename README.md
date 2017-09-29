@@ -1,6 +1,8 @@
 # open-radiation-detector
 Portable radiation detector based on an ionization chamber
 
+# Work in progress! Please excuse the little mess
+
 ![](pictures/ORD_sketch_15jan2017.jpg)
 
 Progress
@@ -13,17 +15,17 @@ Progress
 <img src="pictures/it3_17apr2017.jpg" height="150px"/>
 <img src="pictures/voltage_output_5may2017.png" height="150px"/>
 
-- 15/Feb/2017: It works! At first the result with the new transistors had lots of noise as well. But adding a copper plane behind the main electrode seems to have done the trick. So maybe the transistors were not the problem! The pictures show a new prototype being tested with and without a radiation source. Its response ranges from 70mV to 160mV and it is way more stable than before. Schematic is [Charles Wenzel's Experimenters Ionization Chamber](http://www.techlib.com/science/ion.html#Experimenters%20Chamber) with an FMMT634TA NPN darlington transistor.
+- 15/Feb/2017: It works! At first the result with the new transistors had lots of noise as well. But adding a copper plane behind the main electrode seems to have done the trick. So maybe the transistors were not the problem after all! The pictures show a new prototype being tested with and without a radiation source. Its response ranges from 70mV to 160mV and it is way more stable than before. Schematic is [Charles Wenzel's Experimenters Ionization Chamber](http://www.techlib.com/science/ion.html#Experimenters%20Chamber) with an FMMT634TA NPN darlington transistor.
 
 <img src="pictures/it2_3rdPrototype_15feb2017.jpg" height="150px"/>
 <img src="pictures/testing_3rdProt_background_15feb2017.jpg" height="150px"/>
 <img src="pictures/testing_3rdProt_withSource_15feb2017.jpg" height="150px"/>
 
-- 8/Feb/2017: The Darlington transistors used until now (MMBT6427, MMBTA14, MMBTA28, MMBTA63, MMBTA64) may not be suitable for detecting the low currents involved in this detection problem (nA or even pA). Yet again I have resorted to Charles Wenzel's awesome website. A proper surface-mount alternative to the MPSAW45A power darlington transistor may be the FMMT634 and FMMT734. So I've ordered a bunch of these transistors in order to test the designs again.
+- 8/Feb/2017: The Darlington transistors used until now (MMBT6427, MMBTA14, MMBTA28, MMBTA63, MMBTA64) may not be suitable for detecting the low currents involved in this detection problem (nA or even pA). Yet again I have resorted to Charles Wenzel's awesome website. A proper surface-mount alternative to the MPSAW45A power darlington transistor may be the FMMT634 and FMMT734. So I've ordered a bunch of these transistors in order to test the concept again.
 
 <img src="pictures/FMMT734_gain.png" height="100px"/>
 
-- Week of 7/Feb/2017: The new approach is to use an actual chamber that uses a copper electrode insulated from ground by an outer guard ring. The chamber itself is made of [a standard size, commercially available PCB shielding can](http://www.mouser.es/Search/ProductDetail.aspx?R=BMI-S-104virtualkey64820000virtualkey739-BMI-S-104) (in the pictures you can see my attempt at creating one with tin sheet from a metal can). The first prototype actually seemed to have some reaction during the tests. However the second prototype did not. [G-code to mill the electrode](http://jscut.org/jscut.html?gist=c962737e35c9f9b0445b82d079ceb10d).
+- Week of 7/Feb/2017: The new approach is to use an actual ion chamber that uses a copper electrode insulated from ground by an outer guard ring. The chamber itself is made of [a standard size, commercially available PCB shielding can](http://www.mouser.es/Search/ProductDetail.aspx?R=BMI-S-104virtualkey64820000virtualkey739-BMI-S-104) (in the pictures you can see my attempt at creating one with tin sheet from a metal can). The first prototype actually seemed to have some reaction during the tests. However the second prototype did not. [G-code to mill the electrode](http://jscut.org/jscut.html?gist=c962737e35c9f9b0445b82d079ceb10d).
 
 <img src="pictures/it2_1stPrototype_6feb2017.jpg" height="150px"/>
 <img src="pictures/it2_2ndPrototype_7feb2017.jpg" height="150px"/>
@@ -38,3 +40,10 @@ Progress
 - Self-ask the question: How to make a simple low-cost radiation detector? Begin to learn about ionization chambers thanks to [Charles Wenzel's website](http://www.techlib.com/science/ion.html).
 
 - Week of 1/Jan/2017: First learn of spark particle detectors. [Design, build and test a PCB electrode](https://github.com/vlachoudis/bCNC/pull/480) (but without any radiation source to be tested). [video](https://www.youtube.com/watch?v=s3N2EDGwe9U)
+
+
+
+# License
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+<https://creativecommons.org/licenses/by/4.0/>
+

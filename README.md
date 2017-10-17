@@ -1,13 +1,17 @@
 # open-radiation-detector
-Portable radiation detector based on an ionization chamber
+Portable radiation detector based on a ionization chamber.
 
-# Work in progress! Please excuse the little mess
+The KiCad PCB sources can be found in the repository's subfolders.
 
-![](pictures/ORD_sketch_15jan2017.jpg)
+Check out <https://hackaday.io/project/27508-open-radiation-detector> for more information.
+
+![](pictures/ord_0.9_11oct2017.jpg)
+
+![](pictures/ord0.9_testing_12oct2017.jpg)
 
 Progress
 --
-- Pending tasks: Long term test (is there drift? how does temperature affect measure, even after compensating with another transistor?). Design and mill self-contained PCB that uses 12V battery. Think of electrode shapes to minimize effect of electrostatic fields.
+- October 2017: Designed iteration 0.9 to participate in the Hackaday Prize.
 
 - 5/May/2017: The radiation sensor concept has been incorporated into a connected sensor board. It looks like the effect of nearby electrostatic fields still affects the voltage output, regardless of the back plane being connected to either guard voltage or ground (maybe this is due to the large size of the electrode?). The board uses the PNP configuration polarized with 10 MOhm 1% and an op-amp driver (LM2904DR) to minimize the effect of ADC current consumption. It includes a duplicate circuit unconnected from the electrode, to be used as a compensation for temperature effects.
 

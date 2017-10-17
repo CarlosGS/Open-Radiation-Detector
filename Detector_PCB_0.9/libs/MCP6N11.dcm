@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP6N11
+D Instrumentation Amplifiers Sin, 500kHz, 800uA Gmin 10 v/v
+K instrumentation opamp
+F http://www.mouser.com/ds/2/268/25073A-75155.pdf
+$ENDCMP
+#
+#End Doc Library

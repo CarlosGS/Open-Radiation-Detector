@@ -1,7 +1,7 @@
-# open-radiation-detector
+# Open Radiation Detector
 Portable radiation detector based on a ionization chamber.
 
-The KiCad PCB sources can be found in the repository's subfolders.
+The KiCad PCB sources and BOM can be found in the repository's subfolders.
 
 Check out <https://hackaday.io/project/27508-open-radiation-detector> for more information.
 

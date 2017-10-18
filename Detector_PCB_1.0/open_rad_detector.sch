@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:open_rad_detector-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -33,8 +34,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:MCP6N11
 LIBS:lm3914v
-LIBS:open_rad_detector-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr User 7874 5906
 encoding utf-8
@@ -502,18 +502,18 @@ F 3 "" H 1500 1050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 J3
+L Conn_01x02 J3
 U 1 1 59E56592
-P 950 1000
-F 0 "J3" H 950 1150 50  0000 C CNN
-F 1 "Batt" H 950 800 50  0000 C CNN
-F 2 "A23_battery:A23_battery" H 950 1000 50  0001 C CNN
-F 3 "" H 950 1000 50  0001 C CNN
-	1    950  1000
+P 950 1050
+F 0 "J3" H 950 1200 50  0000 C CNN
+F 1 "Batt" H 950 850 50  0000 C CNN
+F 2 "A23_battery:A23_battery" H 950 1050 50  0001 C CNN
+F 3 "" H 950 1050 50  0001 C CNN
+	1    950  1050
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_01X01 J2
+L Conn_01x01 J2
 U 1 1 59E56928
 P 2900 2250
 F 0 "J2" H 2900 2350 50  0000 C CNN

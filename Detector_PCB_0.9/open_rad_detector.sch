@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:open_rad_detector-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -32,7 +33,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:MCP6N11
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr User 7874 5906
 encoding utf-8
@@ -568,7 +569,7 @@ $EndComp
 Wire Wire Line
 	1600 2800 1400 2800
 Connection ~ 1600 2500
-Text Notes 4950 1000 0    60   ~ 0
+Text Notes 4700 1100 0    60   ~ 0
 using 100ohm resistor for LED
 Wire Wire Line
 	1300 950  1150 950 
@@ -590,18 +591,18 @@ F 3 "" H 1500 1050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 J3
+L Conn_01x02 J3
 U 1 1 59E56592
-P 950 1000
-F 0 "J3" H 950 1150 50  0000 C CNN
-F 1 "Batt" H 950 850 50  0000 C CNN
-F 2 "A23_battery:A23_battery" H 950 1000 50  0001 C CNN
-F 3 "" H 950 1000 50  0001 C CNN
-	1    950  1000
+P 950 1050
+F 0 "J3" H 950 1200 50  0000 C CNN
+F 1 "Batt" H 950 900 50  0000 C CNN
+F 2 "A23_battery:A23_battery" H 950 1050 50  0001 C CNN
+F 3 "" H 950 1050 50  0001 C CNN
+	1    950  1050
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_01X01 J2
+L Conn_01x01 J2
 U 1 1 59E56928
 P 2900 2250
 F 0 "J2" H 2900 2350 50  0000 C CNN
@@ -612,14 +613,14 @@ F 3 "" H 2900 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X06 J4
+L Conn_01x06 J4
 U 1 1 59E56F43
-P 6100 1600
-F 0 "J4" H 6100 1950 50  0000 C CNN
-F 1 "CONN_01X06" V 6200 1600 50  0000 C CNN
-F 2 "Connectors:PINHEAD1-6" H 6100 1600 50  0001 C CNN
-F 3 "" H 6100 1600 50  0001 C CNN
-	1    6100 1600
+P 6100 1550
+F 0 "J4" H 6100 1900 50  0000 C CNN
+F 1 "CONN_01X06" V 6200 1550 50  0000 C CNN
+F 2 "Connectors:PINHEAD1-6" H 6100 1550 50  0001 C CNN
+F 3 "" H 6100 1550 50  0001 C CNN
+	1    6100 1550
 	1    0    0    -1  
 $EndComp
 $Comp

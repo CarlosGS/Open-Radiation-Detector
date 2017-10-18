@@ -16,7 +16,7 @@ Check out <https://hackaday.io/project/27508-open-radiation-detector> for more i
 
 Progress
 --
-- October 2017: Designed iteration 0.9 to participate in the Hackaday Prize.
+- October 2017: Designed, build and document a prototype to participate in the Hackaday Prize.
 
 - 5/May/2017: The radiation sensor concept has been incorporated into a connected sensor board. It looks like the effect of nearby electrostatic fields still affects the voltage output, regardless of the back plane being connected to either guard voltage or ground (maybe this is due to the large size of the electrode?). The board uses the PNP configuration polarized with 10 MOhm 1% and an op-amp driver (LM2904DR) to minimize the effect of ADC current consumption. It includes a duplicate circuit unconnected from the electrode, to be used as a compensation for temperature effects.
 

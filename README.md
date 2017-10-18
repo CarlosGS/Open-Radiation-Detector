@@ -9,6 +9,9 @@ Check out <https://hackaday.io/project/27508-open-radiation-detector> for more i
 
 ![](pictures/ord0.9_testing_12oct2017.jpg)
 
+# Next version:
+![](Detector_PCB_1.0/open_rad_detector_1.0.jpg)
+
 Progress
 --
 - October 2017: Designed iteration 0.9 to participate in the Hackaday Prize.

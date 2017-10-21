@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:open_rad_detector-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -34,6 +33,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:MCP6N11
 LIBS:lm3914v
+LIBS:open_rad_detector-cache
 EELAYER 25 0
 EELAYER END
 $Descr User 7874 5906
@@ -309,8 +309,6 @@ Wire Wire Line
 Wire Wire Line
 	2400 2500 2400 2450
 Wire Wire Line
-	1400 2500 1750 2500
-Wire Wire Line
 	2550 2500 2400 2500
 Wire Wire Line
 	1650 3650 1200 3650
@@ -468,17 +466,6 @@ Text Notes 3500 3750 0    60   ~ 0
 using 1k resistor
 Text Notes 2950 3200 0    60   ~ 0
 using 100k potentiometer
-$Comp
-L R R5
-U 1 1 59DFDDFA
-P 1400 2650
-F 0 "R5" V 1480 2650 50  0000 C CNN
-F 1 "10M" V 1400 2650 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 1330 2650 50  0001 C CNN
-F 3 "" H 1400 2650 50  0001 C CNN
-	1    1400 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1600 2800 1400 2800
 Connection ~ 1600 2500
@@ -489,7 +476,7 @@ Wire Wire Line
 Wire Wire Line
 	1150 1150 1150 1050
 Text Notes 1200 3050 1    60   ~ 0
-Lower resistance ensures\na lower reference voltage,\nwhich facilitates amplification\n(even with bad tolerances)
+Optional resistor socket\nto tune the output value
 $Comp
 L SW_SPDT SW1
 U 1 1 59E5617F
@@ -951,6 +938,23 @@ F 1 "GND" H 5450 900 50  0000 C CNN
 F 2 "" H 5450 1050 50  0001 C CNN
 F 3 "" H 5450 1050 50  0001 C CNN
 	1    5450 1050
+	1    0    0    -1  
+$EndComp
+Text Notes 4400 2750 0    60   ~ 0
+1.21k
+Text Notes 4400 3150 0    60   ~ 0
+3.83k
+Wire Wire Line
+	1400 2500 1750 2500
+$Comp
+L R R5
+U 1 1 59DFDDFA
+P 1400 2650
+F 0 "R5" V 1480 2650 50  0000 C CNN
+F 1 "Rtune" V 1400 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1330 2650 50  0001 C CNN
+F 3 "" H 1400 2650 50  0001 C CNN
+	1    1400 2650
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

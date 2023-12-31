@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10446305.svg)](https://doi.org/10.5281/zenodo.10446305)
 # Open Radiation Detector
 Portable radiation detector based on a ionization chamber.
 
@@ -56,3 +57,18 @@ Progress
 This work is licensed under a Creative Commons Attribution 4.0 International License.
 <https://creativecommons.org/licenses/by/4.0/>
 
+Please cite as:
+--
+Garcia-Saura, C. (2017). Open Radiation Detector. GitHub. https://doi.org/10.5281/ZENODO.10446305
+
+Latex / Bibtex citation:
+```bibtex
+@misc{garciasaura2017rad,
+  author = {Garcia-Saura, Carlos},
+  title = {Open Radiation Detector},
+  publisher = {GitHub},
+  year = {2017},
+  doi = {10.5281/ZENODO.10446305},
+  url = {https://doi.org/10.5281/ZENODO.10446305}
+}
+```
